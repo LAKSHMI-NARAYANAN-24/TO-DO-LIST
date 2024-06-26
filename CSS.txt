@@ -1,0 +1,75 @@
+.container{
+    max-height: 500px;
+    padding: 20px 20px;
+    width: 500px;
+    margin:auto;
+    background: rgb(196, 177, 214);
+    border-radius: 5px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.text input{
+    border: none;
+    width: 85%;
+    height: 35px;
+    background: wheat;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text button{
+    border: none;
+    width: 50px;
+    border-radius:5px;
+    padding: 0 5px;
+    background: rgb(153, 52, 52);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li{
+    list-style:none;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    position: relative;
+}
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/js-projects/To-Do-List/images/icons8-select-24.png);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-image: url(/js-projects/To-Do-List/images/icons8-empty-circle-30.png);
+    background-size: cover;
+    background-position: center;
+    left:0px
+}
+ul li span{
+    position: absolute;
+    
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 0;
+    text-align: center;
+    margin-right: 20px;
+}
+
+ul li span:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+}
